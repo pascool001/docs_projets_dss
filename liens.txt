@@ -1,0 +1,34 @@
+Using gRPC with NestJS and Angular
+------------------------------------
+https://medium.com/creative-technology-concepts-code/using-grpc-with-nestjs-and-angular-b60b444bc3ab
+
+Microfrontends with angular: Multirepo
+----------------------------------------
+https://medium.com/@igorm573/microfrontends-with-angular-multirepo-19b3e9ec4945
+
+Build Multi-Repo Micro-Frontend Using Angular And Webpack 5 Module Federation
+----------------------------------------------------------------------------
+	https://www.csharp.com/blogs/build-multirepo-microfrontend-using-angular-and-webpack-5-module-fed
+
+      Commands / etapes de construction
+      -------------------------------
+	Build first remote(Micro-frontend) application (Auth-MFE)
+	Create workspace(auth-app-remote) for first MFE (ng new auth-app-remote --create-application false --skip-tests)
+	create a project(auth-mfe) inside the auth-app-remote (cd auth-app-remote && ng g app auth-mfe --skip-tests --routing)
+	Add a home component to auth-mfe (ng g c components/home --project auth-mfe)
+	
+	Create a feature module for the auth-mfe project (ng g module --project auth-mfe --routing auth)
+	Add a component login to the auth feature module (ng g c --project auth-mfe --module auth auth/components/login)
+	Updates the auth-routing.module.ts to configure LoginComponent in route
+	Update the app-routing.module.ts to configure HomeComponent in route
+	Configure the application with module federation (ng add @angular-architects/module-federation@14.3.0 --type remote --project auth-mfe --port 4200)
+
+etc ...
+
+Building Modular Angular Applications with Micro Frontends and Native Federation / www.wdcoders.com
+-------------------------------------------------------------------------------------
+https://www.wdcoders.com/post/building-modular-angular-applications-with-micro-frontends-and-native-federation
+
+
+Auth. Flow Chart Link : https://excalidraw.com/#json=ZosW4O7b6PYDKikVAjd3p,aNU1TSLt6xOuI9yIehnygg
+
